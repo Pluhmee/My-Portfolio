@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Adedokun Jesupelumi — Developer Portfolio
 
 A modern, premium developer portfolio built with React, Framer Motion, and a dark-first design system. Designed to impress recruiters, companies, and internship programs.
@@ -271,3 +272,6 @@ Built by **Adedokun Jesupelumi Zachariah**
 - Email: adedokunpelumi0@gmail.com
 - GitHub: https://github.com/Pluhmee
 - LinkedIn: https://www.linkedin.com/in/adedokun-pelumi-080124295
+=======
+# My-Portfolio
+>>>>>>> e0cb085e746b89bd4c203dab08c81328bd6221dc
