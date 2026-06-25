@@ -18,41 +18,41 @@ export const projects = [
   {
     id: 1,
     title: "Digital Staff Management System",
-    description:
-      "A Flask-based system with admin and user roles, staff management, leave requests, photo uploads, activity logs, and data export. Built for organizational efficiency and modern HR workflows.",
+    description: "A Flask-based system with admin and user roles, staff management, leave requests, photo uploads, activity logs, and data export.",
     tech: ["Python", "Flask", "SQLite", "HTML/CSS", "JavaScript"],
     github: "https://github.com/Pluhmee",
-    demo: "#",
+    demo: "https://digital-staff-management-system.onrender.com/login",  // ← real URL here
     category: "Backend",
     featured: true,
     color: "#6c63ff",
     icon: "👥",
+    liveUrl: "https://digital-staff-management-system.onrender.com/login",  // ← same URL
   },
   {
     id: 2,
     title: "Digital Asset & Inventory Management",
-    description:
-      "A web application designed to manage digital assets and track inventory with admin panel, file upload capability, and comprehensive reporting features.",
+    description: "A web application designed to manage digital assets and track inventory with admin panel, file upload capability, and reporting.",
     tech: ["Flask", "Python", "Bootstrap", "SQLAlchemy", "Jinja2"],
     github: "https://github.com/Pluhmee",
-    demo: "#",
+    demo: "https://your-asset-management-site.com",
     category: "Fullstack",
     featured: true,
     color: "#ff6584",
     icon: "📦",
+    liveUrl: "https://your-asset-management-site.com",
   },
   {
     id: 3,
     title: "AI Music Assistant Player",
-    description:
-      "A smart web-based music player integrating AI-powered features for music discovery, playlist generation, and seamless playback. Modern UI with intelligent recommendations.",
+    description: "A smart web-based music player integrating AI-powered features for music discovery, playlist generation, and seamless playback.",
     tech: ["JavaScript", "HTML5", "CSS3", "Web Audio API", "AI API"],
     github: "https://github.com/Pluhmee",
-    demo: "#",
+    demo: "https://your-music-player-site.com",
     category: "Frontend",
     featured: true,
     color: "#00d4aa",
     icon: "🎵",
+    liveUrl: "https://your-music-player-site.com",
   },
 ];
 
