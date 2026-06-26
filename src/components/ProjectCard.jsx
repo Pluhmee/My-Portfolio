@@ -78,7 +78,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Hover overlay */}
         <div className="project-preview-overlay">
-          
+          <a
             href={project.github}
             target="_blank"
             rel="noreferrer"
@@ -90,7 +90,7 @@ const ProjectCard = ({ project, index }) => {
             GitHub
           </a>
           {project.demo && project.demo !== "#" && (
-            
+            <a
               href={project.demo}
               target="_blank"
               rel="noreferrer"
@@ -127,48 +127,6 @@ const ProjectCard = ({ project, index }) => {
         <div className="project-tech">
           {project.tech.map((t) => (
             <span key={t} className="tech-tag">{t}</span>
-          ))}
-        </div>
-      </div>
-
-      <div
-        className="project-card-glow"
-        style={{ background: `radial-gradient(circle at 50% 0%, ${project.color}18, transparent 70%)` }}
-      />
-    </motion.div>
-  );
-};
-
-export default ProjectCard;          {project.demo && project.demo !== "#" && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-              aria-label="Live Demo"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                <polyline points="15 3 21 3 21 9"/>
-                <line x1="10" y1="14" x2="21" y2="3"/>
-              </svg>
-            </a>
-          )}
-        </div>
-      </div>
-
-      <div className="project-card-body">
-        <div className="project-category" style={{ color: project.color }}>
-          {project.category}
-        </div>
-        <h3 className="project-title">{project.title}</h3>
-        <p className="project-desc">{project.description}</p>
-
-        <div className="project-tech">
-          {project.tech.map((t) => (
-            <span key={t} className="tech-tag">
-              {t}
-            </span>
           ))}
         </div>
       </div>
