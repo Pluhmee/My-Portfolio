@@ -41,19 +41,19 @@ export const projects = [
     icon: "📚",
     liveUrl: "https://tio-college.vercel.app",
   },
-//   {
-//     id: 3,
-//     title: "AI Music Assistant Player",
-//     description: "A smart web-based music player integrating AI-powered features for music discovery, playlist generation, and seamless playback.",
-//     tech: ["JavaScript", "HTML5", "CSS3", "Web Audio API", "AI API"],
-//     github: "https://github.com/Pluhmee",
-//     demo: "https://your-music-player-site.com",
-//     category: "Frontend",
-//     featured: true,
-//     color: "#00d4aa",
-//     icon: "🎵",
-//     liveUrl: "https://your-music-player-site.com",
-//   },
+  {
+    id: 3,
+    title: "SupervisionHub",
+    description: "A comprehensive web-based solution for managing student academic project supervision in LASU",
+    tech: ["JavaScript", "HTML5", "CSS3", "Python3", "FLask" , "Postgres"],
+    github: "https://github.com/Pluhmee",
+    demo: "https://supervisionhub.onrender.com",
+    category: "Fullstack",
+    featured: true,
+    color: "#00d4aa",
+    icon: "🎓",
+    liveUrl: "https://supervisionhub.onrender.com",
+  },
 ];
 
 export const skills = {
