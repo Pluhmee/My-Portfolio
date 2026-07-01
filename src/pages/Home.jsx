@@ -38,6 +38,28 @@ const Home = () => {
             Available for opportunities
           </motion.div>
 
+       <motion.h1
+            className="hero-title"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+          >
+            Hi, I'm{" "}
+            <Typewriter
+              options={{
+                cursor: "|",
+                wrapperClassName: "typewriter-wrapper",
+                cursorClassName: "typewriter-cursor",
+                delay: 45,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .pauseFor(900)
+                  .typeString('<span class="gradient-text hero-name">Adedokun Jesupelumi</span>')
+                  .start();
+              }}
+            />
+          </motion.h1>
 
 
           <motion.div
