@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 import { ownerInfo, projects, skills } from "../data/portfolio";
 import ProjectCard from "../components/ProjectCard";
 import "./Home.css";
@@ -37,19 +38,7 @@ const Home = () => {
             Available for opportunities
           </motion.div>
 
-          <motion.h1
-            className="hero-title"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-          >
-            Hi, I'm{" "}
-            <span className="gradient-text">
-              Adedokun
-              <br />
-              Jesupelumi
-            </span>
-          </motion.h1>
+
 
           <motion.div
             className="hero-role"
