@@ -1,0 +1,100 @@
+/* ── Load Screen ── */
+.load-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #080812;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.load-bar {
+  position: absolute;
+  top: 0; left: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg, #6c63ff, #ff6584, #00d4aa);
+  transform-origin: left;
+}
+
+.load-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.load-tag {
+  font-family: 'Syne', monospace;
+  font-size: 0.8rem;
+  color: rgba(108,99,255,0.5);
+  letter-spacing: 0.05em;
+}
+
+.load-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  line-height: 1;
+}
+
+.load-first {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #ffffff, #a0a0cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.load-last {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #6c63ff, #ff6584);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.load-sub {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Corner brackets */
+.load-corner {
+  position: absolute;
+  width: 24px; height: 24px;
+  opacity: 0.3;
+}
+.load-corner.tl {
+  top: 24px; left: 24px;
+  border-top: 2px solid #6c63ff;
+  border-left: 2px solid #6c63ff;
+}
+.load-corner.tr {
+  top: 24px; right: 24px;
+  border-top: 2px solid #ff6584;
+  border-right: 2px solid #ff6584;
+}
+.load-corner.bl {
+  bottom: 24px; left: 24px;
+  border-bottom: 2px solid #00d4aa;
+  border-left: 2px solid #00d4aa;
+}
+.load-corner.br {
+  bottom: 24px; right: 24px;
+  border-bottom: 2px solid #ffb347;
+  border-right: 2px solid #ffb347;
+}

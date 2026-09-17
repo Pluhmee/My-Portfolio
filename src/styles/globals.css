@@ -1,0 +1,198 @@
+
+:root {
+  --bg: #080812;
+  --bg-2: #0e0e1c;
+  --bg-card: #111120;
+  --bg-card-hover: #161628;
+  --border: rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.14);
+  --text-1: #f0f0fa;
+  --text-2: #8080a8;
+  --text-3: #4a4a6a;
+  --accent: #6c63ff;
+  --accent-2: #ff6584;
+  --accent-3: #00d4aa;
+  --accent-amber: #ffb347;
+  --grad: linear-gradient(135deg, #6c63ff, #ff6584);
+  --grad-3: linear-gradient(135deg, #6c63ff, #00d4aa);
+  --grad-subtle: linear-gradient(135deg, rgba(108,99,255,0.12), rgba(255,101,132,0.06));
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-md: 0 8px 40px rgba(0,0,0,0.45);
+  --shadow-lg: 0 24px 80px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 60px rgba(108,99,255,0.18);
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 9999px;
+  --nav-h: 68px;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --t: 0.28s var(--ease);
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --section-py: 110px;
+  --container: 1120px;
+}
+
+[data-theme="light"] {
+  --bg: #f4f4fa;
+  --bg-2: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f0f8;
+  --border: rgba(0,0,0,0.07);
+  --border-hover: rgba(0,0,0,0.14);
+  --text-1: #0a0a18;
+  --text-2: #55557a;
+  --text-3: #aaaacc;
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 40px rgba(0,0,0,0.1);
+  --shadow-lg: 0 24px 80px rgba(0,0,0,0.14);
+  --shadow-glow: 0 0 60px rgba(108,99,255,0.1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-1);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  transition: background var(--t), color var(--t);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+ul,ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+input, textarea { font-family: inherit; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+::selection { background: rgba(108,99,255,0.25); }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--section-py) 0;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.section-tag::before {
+  content: '';
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.section-sub {
+  font-size: 1rem;
+  color: var(--text-2);
+  max-width: 520px;
+  line-height: 1.75;
+}
+
+.grad-text {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  border-radius: var(--r-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all var(--t);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #7c74ff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(108,99,255,0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-1);
+  border: 1px solid var(--border-hover);
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ── Tablet ── */
+@media (max-width: 900px) {
+  :root { --section-py: 80px; }
+  .container { padding: 0 20px; }
+  .section-sub { font-size: 0.95rem; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  :root { --section-py: 60px; }
+  .container { padding: 0 16px; }
+
+  .section-title {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  .section-sub {
+    font-size: 0.875rem;
+    max-width: 100%;
+  }
+
+  .btn {
+    padding: 11px 20px;
+    font-size: 0.84rem;
+  }
+}

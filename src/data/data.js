@@ -1,0 +1,216 @@
+export const owner = {
+  name: "Adedokun Jesupelumi Zachariah",
+  shortName: "Pelumi",
+  title: "Full-Stack Web Developer",
+  subtitle: "B.Sc Computer Science — 2nd Class Honours (Upper)",
+  bio: "Computer Science graduate and full-stack web developer with hands-on experience building Flask/FastAPI backends, React frontends, and REST APIs. Skilled in authentication, role-based access control, database design, and API integration.",
+  email: "adedokunpelumi0@gmail.com",
+  phone: "+234 7041137155",
+  location: "Ikorodu, Lagos, Nigeria",
+  github: "https://github.com/Pluhmee",
+  linkedin: "https://www.linkedin.com/in/adedokun-pelumi-080124295",
+  portfolio: "https://my-portfolio-one-lake-33.vercel.app",
+};
+
+export const navLinks = [
+  { label: "Home",    href: "#home" },
+  { label: "About",   href: "#about" },
+  { label: "Skills",  href: "#skills" },
+  { label: "Projects",href: "#projects" },
+  { label: "Certs",   href: "#certifications" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "First Atlantic Schools Website Redesign",
+    desc: "Redesigned and developed a modern, responsive school website for First Atlantic Schools using Next.js and Tailwind CSS. The project involved rebuilding an outdated WordPress-based site into a cleaner, faster, and more visually engaging platform with improved UI/UX, mobile responsiveness, animated sections, gallery and video showcases, a functional contact form integration, SEO setup, and deployment on Vercel",
+    tech:[{ name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+          { name: "Framer Motion", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg" },
+          { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+          { name: "Typescript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+          { name: "EmailJS", logo: null }],
+    github: "https://github.com/Pluhmee",
+    demo: "https://www.firstatlanticschools.com",
+    color: "#6c63ff",
+    icon: "🌐",
+    category: "Frontend",
+  },
+  {
+    id: 2,
+    title: "Digital Staff Management System",
+    desc: "Full-stack staff management app with authentication, role-based access, staff profiles, file uploads, email notifications (Flask-Mail), data export (ReportLab), and activity monitoring. Built during SIWES.",
+    tech: [
+      { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+      { name: "SQLAlchemy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" },
+      { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+      { name: "Bootstrap", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+      { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+    ],
+    github: "https://github.com/Pluhmee",
+    demo: "https://digital-staff-management-system.onrender.com",
+    color: "#ff6584",
+    icon: "👥",
+    category: "Fullstack",
+  },
+  {
+    id: 3,
+    title: "TIO College School Website",
+    desc: "A responsive school website for Tio College, Itamaga Ikorodu. Built with React featuring modern UI, school info sections, and cross-device compatibility.",
+    tech:  [
+      { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "Vercel", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+    ],
+    github: "https://github.com/Pluhmee",
+    demo: "https://tio-college.vercel.app",
+    color: "#00d4aa",
+    icon: "🏫",
+    category: "Frontend",
+  },
+  {
+    id: 4,
+    title: "Academic Project Supervision Platform",
+    desc: "A web platform for supervising and tracking student academic projects at LASU. Built as a final-year project with Flask and MySQL.",
+    tech: [
+      { name: "Flask", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+      { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+      { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+    ],
+    github: "https://github.com/Pluhmee",
+    demo: "https://supervisionhub.onrender.com",
+    color: "#ffb347",
+    icon: "🎓",
+    category: "Fullstack",
+  },
+  {
+    id: 5,
+    title: "E-commerce Marketplace Backend",
+    desc: "Contributed to a FastAPI-based e-commerce backend. Explored AI assistant integration for backend workflows including product management and SEO-related tasks.",
+    tech: [
+      { name: "FastAPI", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+    ],
+    github: "https://github.com/Pluhmee",
+    demo: "#",
+    color: "#a855f7",
+    icon: "🛒",
+    category: "Backend",
+  },
+  {
+    id: 6,
+    title: "PluhmeeAI",
+    desc: "A dark, lime-accented product landing page for a fictional ambient-robotics brand. Built to feel like a hand-crafted Framer site: smooth scroll, masked text reveals, pinned horizontal scroll, magnetic buttons and a custom cursor.",
+    tech: [
+      { name: "HTML5", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS3", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "Framer Motion", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg" },
+      { name: "GSAP", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/GSAP/GSAP-original.svg" }
+    ],
+    github: "https://github.com/Pluhmee",
+    demo: "https://pluhmeeai.vercel.app",
+    color: "#06b6d4",
+    icon: "📄",
+    category: "Frontend",
+  },
+];
+
+export const skills = [
+  // Frontend
+  { name: "React", category: "Frontend", level: 80,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "TypeScript", category: "Frontend", level: 65,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "JavaScript", category: "Frontend", level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "HTML5", category: "Frontend", level: 95,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", category: "Frontend", level: 90,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "Bootstrap", category: "Frontend", level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+
+  // Backend
+  { name: "Python", category: "Backend", level: 88,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Flask", category: "Backend", level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+  { name: "FastAPI", category: "Backend", level: 70,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+
+  // Databases
+  { name: "PostgreSQL", category: "Database", level: 75,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "MySQL", category: "Database", level: 72,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "SQLite", category: "Database", level: 82,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" },
+
+  // Tools
+  { name: "Git", category: "Tools", level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", category: "Tools", level: 85,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Vercel", category: "Tools", level: 80,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg" },
+  { name: "VS Code", category: "Tools", level: 95,
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+];
+
+export const certifications = [
+  {
+    id: 1,
+    title: "Certificate in Web Design",
+    org: "GlobalTech World Computer Institute",
+    year: "2022",
+    detail: "HTML, CSS, JavaScript, Graphic Design & ICT Fundamentals — Upper Credit",
+    color: "#6c63ff",
+  },
+  {
+    id: 2,
+    title: "Microsoft Generative AI",
+    org: "Nigeria Learning Passport",
+    year: "2026",
+    detail: "Generative AI fundamentals and practical applications",
+    color: "#00d4aa",
+  },
+  {
+    id: 3,
+    title: "SIWES / Industrial Training",
+    org: "Ministry of Science & Technology, Ikeja, Lagos",
+    year: "2025",
+    detail: "Software development industrial training completion",
+    color: "#ff6584",
+  },
+  {
+    id: 4,
+    title: "Claude AI Fluency Certificate",
+    org: "Claude ANTHROPIC AI",
+    year: "2026",
+    detail: "Certificate in Claude (Anthropic’s)Ai Fluency: Framework and foundations",
+    color: "#98ff65",
+  },
+];
+
+export const education = [
+  {
+    degree: "B.Sc. Computer Science",
+    school: "Lagos State University (LASU)",
+    year: "2026",
+    grade: "2nd Class Honours (Upper Division) — 3.88/5.0",
+    icon: "🎓",
+  },
+  {
+    degree: "WASSCE",
+    school: "Oriwu Model College, Igbogbo, Ikorodu",
+    year: "2022",
+    grade: "West African Senior School Certificate",
+    icon: "📚",
+  },
+];
